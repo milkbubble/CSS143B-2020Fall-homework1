@@ -8,7 +8,7 @@ public class Problem1Test {
     // DO NOT CHANGE
     @Test
     public void testBinarySearch() {
-        int inputs[][] = {
+        int[][] inputs = {
                 {},
                 {3},
                 {3},
@@ -20,8 +20,8 @@ public class Problem1Test {
                 {3,5,7,9,20},
                 {3,5,7,9,20},
         };
-        int targets[] = {9, 1, 3, 1, 3, 4, 6, 8, 3, 9};
-        int answer[] = {-1, -1, 0, 0, 1, 0, 1, 2, 0, 3};
+        int[] targets = {9, 1, 3, 1, 3, 4, 6, 8, 3, 9};
+        int[] answer = {-1, -1, 0, 0, 1, 0, 1, 2, 0, 3};
 
         assertEquals(inputs.length, targets.length);
         assertEquals(inputs.length, answer.length);
@@ -32,4 +32,5 @@ public class Problem1Test {
             assertEquals(expected, actual);
         }
     }
+
 }
